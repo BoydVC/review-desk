@@ -1,0 +1,12 @@
+[
+  {
+    "number": 1,
+    "title": "Sample unified diff, not a Draft Day pull",
+    "state": "open",
+    "head": "sample",
+    "base": "main",
+    "diff_file": "pr-01.diff",
+    "bytes": 400,
+    "truncated_or_error": null
+  }
+]

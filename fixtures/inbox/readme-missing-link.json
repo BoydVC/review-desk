@@ -1,0 +1,32 @@
+{
+  "groundTruth": true,
+  "expected": [
+    {
+      "bugClass": "docs-missing-target",
+      "path": "README.md",
+      "symbol": "examples/missing.ts"
+    }
+  ],
+  "pr": {
+    "id": "inbox-readme-missing-link",
+    "provenance": "seeded-example",
+    "provenanceNote": "Seeded example. Not a pull request from BoydVC/draft-day. Drop-in sample for the fixture importer.",
+    "repo": "example/review-desk-fixtures",
+    "number": 900,
+    "title": "Link the README at a file that is not there",
+    "body": "Importer sample. It is not part of the nightly set unless you copy it into fixtures/eval.",
+    "author": "agent",
+    "authorTrusted": true,
+    "baseSha": "inbox-base",
+    "headSha": "inbox-head",
+    "repoPaths": ["README.md"],
+    "files": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "previousContent": "# Desk\n",
+        "content": "# Desk\n\nSee [the example](examples/missing.ts).\n"
+      }
+    ]
+  }
+}

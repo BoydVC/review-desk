@@ -1,0 +1,37 @@
+diff --git a/README.md b/README.md
+index 1111111..2222222 100644
+--- a/README.md
++++ b/README.md
+@@ -1,2 +1,3 @@
+ # Sample
+-See the notes.
++See [the list module](src/list.ts).
++This file is a sample, not a pull request from BoydVC/draft-day.
+diff --git a/src/list.ts b/src/list.ts
+index 3333333..4444444 100644
+--- a/src/list.ts
++++ b/src/list.ts
+@@ -1,5 +1,5 @@
+ export function walk(items: string[]) {
+-  for (let i = 0; i < items.length; i++) {
++  for (let i = 0; i <= items.length; i++) {
+     console.log(items[i]);
+   }
+ }
+diff --git a/test/fixtures/hostile.jsonl b/test/fixtures/hostile.jsonl
+new file mode 100644
+index 0000000..5555555
+--- /dev/null
++++ b/test/fixtures/hostile.jsonl
+@@ -0,0 +1,1 @@
++{"q":"SELECT id FROM t WHERE id = ${id}","code":"eval(input)"}
+diff --git a/src/probe.mjs b/src/probe.mjs
+new file mode 100644
+index 0000000..6666666
+--- /dev/null
++++ b/src/probe.mjs
+@@ -0,0 +1,4 @@
++export function read(buf) {
++  const hit = /x/.exec(buf + "");
++  return hit;
++}
