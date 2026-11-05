@@ -260,7 +260,7 @@ export const expertCards: ExpertCard[] = [
     citations: [
       {
         title: "Observability Engineering",
-        authors: "Charity Majors, Liz Fong-Jones, and George Miranda",
+        authors: "Charity Majors, Liz Fong-Jones, and George Jordan",
         year: 2022,
         outlet: "O'Reilly",
       },
